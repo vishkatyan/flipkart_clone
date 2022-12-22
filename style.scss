@@ -1,0 +1,203 @@
+//Adding Media Queries File
+@import "responsive.scss";
+
+* {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+
+//Colors
+$primaryColor: #2874F0;
+// $primaryColor: #047BD5;
+$fontColor: #fff;
+
+// For Mobile Phone
+@media only screen and (max-width:400px) and (max-width: 600px) {
+
+    // Navbar Styling
+    nav {
+        background-color: $primaryColor;
+        height: 120px;
+        width: 100%;
+        display: inline-block;
+        align-items: center;
+
+        .ham {
+            width: 20px;
+            height: 16px;
+        }
+
+        img {
+            height: 25px;
+            width: 100px;
+            padding-left: 15px;
+            padding-top: 18px;
+        }
+
+        ;
+
+        .navinner {
+            // li {
+            //     display: inline-block;
+            //     padding: 6px;
+            //     right: 70px;
+            //     margin-top: -30px;
+            //     position: absolute;
+
+            //     a {
+            //         text-decoration: none;
+            //         color: $fontColor;
+            //         font-family: 'Roboto', sans-serif;
+            //     }
+            // }
+
+            .cart {
+                width: 15px;
+                height: 15px;
+                display: inline-block;
+                padding: 10px;
+                margin-top: -35px;
+                position: absolute;
+                right: 45px;
+            }
+
+            img {
+                width: 15px;
+                height: 15px;
+                display: inline-block;
+                padding: 10px;
+                margin-top: -35px;
+                position: absolute;
+                right: 10px;
+            }
+        }
+
+        #form {
+            padding: 15px;
+            width: 300px;
+            height: 50px;
+            border-radius: 5px;
+            margin-left: 23px;
+            input{
+                height: 80%;
+                width: 200%;
+                padding: 6px 10px;
+            }
+        }
+    }
+
+    // Hero Section Styling
+    .hero{
+        margin-top: -5px;
+        img{
+            height: 168px;
+            width: 100%;
+        }
+    }
+    .categories{
+        margin-top: -3px;
+        img{
+            margin: -2.5px;
+            height: 110px;
+            width: 20.4%;
+        }
+
+    }
+    .categories2{
+        margin-top: -1.2px;
+        img{
+            margin: -2.5px;
+            height: 110px;
+            width: 20.4%;
+        }
+    }
+    .bluetooth{
+        margin-top: -1px;
+        img{
+             width: 100%;
+            height: 90px;
+               
+        }
+    }
+    // Viewed Store
+    .store{
+        h1{
+            text-align: left;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            padding: 15px;
+        }
+        .images{
+            background-color: $fontColor;
+            img{
+                width: 25%;
+                height: 120px;
+                padding: 10px;
+                box-shadow: 0px 1px 3px rgb(0 0 0 / 16%);            
+            }
+        }
+    }
+
+    // Christmas Banner Styling
+    .christmas{
+        .banner{
+            margin-top: -5px;
+            img{
+                height: 100px;
+                width: 100%;
+            }
+        }
+        .christmasproducts{
+            margin-top: -5px;
+            img{
+                margin: -2.5px;
+                height: 140px;
+                width: 33.3%;
+            
+            }
+        }
+
+    } 
+    //Sponsored Products Styling
+    .sponsore{
+        h1{
+            text-align: left;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            padding: 15px;
+        }
+        .sponsoredproducts{
+            margin-top: -5px;
+            img{
+                margin: -2.5px;
+                height: 150px;
+                width: 33.3%;
+            }
+        }
+    }
+   button{
+    background-color: $primaryColor;
+    color: $fontColor;
+    border: none;
+    margin: 5px;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 30px;
+    width: 38%;
+    font-family: 'Roboto','sans-serif';
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background: linear-gradient(270deg, rgb(40, 116, 240), rgb(104, 157, 244));
+   }
+
+}
